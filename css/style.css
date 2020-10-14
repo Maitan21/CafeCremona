@@ -1404,7 +1404,7 @@ p {
 .fix_motion .sticky_cont .cont_box .right_mask {position: absolute; right:0; top:0; z-index:50; width:50%; height: 100%; background: #000; }
 .no-csspositionsticky .fix_motion .sticky_cont .cont_box .left_mask {width: 0px;}
 .no-csspositionsticky .fix_motion .sticky_cont .cont_box .right_mask {width: 0px;}
-.fix_motion .sticky_cont .cont_box .bg_img {position:absolute; left:0; top:0; z-index:20; width: 100%; height: 100%; background-image: url('../images/KakaoTalk_20201014_042117576.jpg'); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;}
+.fix_motion .sticky_cont .cont_box .bg_img {position:absolute; left:0; top:0; width: 100%; height: 100%; background-image: url('../images/cafe1.jpg'); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;}
 .fix_motion .sticky_cont .cont_box .ending_txt {position: absolute; left:0; top:0; z-index:30; width: 100%; height: 100%; opacity:0; transition:opacity 1s;}
 .no-csspositionsticky .ending_txt {display: none;}
 .fix_motion .sticky_cont .cont_box .ending_txt:after {position: absolute; left:0; top:0; z-index:-1; width: 100%; height: 100%; background: rgba(255,255,255,1); content:"";}
@@ -1417,10 +1417,12 @@ p {
 .ggang_box h2 {font-size:32px;}
 
 .fix_motion {height: 3000px;}
-.fix_motion .sticky_cont .cont_box .bg_img {background-image: url('../images/KakaoTalk_20201014_042117576_01.jpg'); }
+.fix_motion .sticky_cont .cont_box .bg_img {background-image: url('../images/cafe1.jpg'); }
 .fix_motion .sticky_cont .cont_box .intro_txt h2 {font-size: 50px;}
 .fix_motion .sticky_cont .cont_box .ending_txt .tb_row .tb_cell p {font-size:50px;}
 }
+
+
 
 h6 {
   margin-top: 50px;
@@ -1869,4 +1871,69 @@ h6 {
     color: #ffffff;
   }
 }
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+.mainTitle h1 {
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  font-size: 4rem;
+
+  -webkit-animation: blink 5s infinite;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
 /*# sourceMappingURL=style.css.map */
