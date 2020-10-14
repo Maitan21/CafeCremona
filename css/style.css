@@ -1114,14 +1114,8 @@ p {
 .no-csspositionsticky .fix_motion .sticky_cont .cont_box .left_mask {width: 0px;}
 .no-csspositionsticky .fix_motion .sticky_cont .cont_box .right_mask {width: 0px;}
 .fix_motion .sticky_cont .cont_box .bg_img {position:absolute; left:0; top:0; width: 100%; height: 100%; background-image: url('../images/cafe1.jpg'); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;}
-.fix_motion .sticky_cont .cont_box .ending_txt {position: absolute; left:0; top:0; z-index:30; width: 100%; height: 100%; opacity:0; transition:opacity 1s;}
-.no-csspositionsticky .ending_txt {display: none;}
-.fix_motion .sticky_cont .cont_box .ending_txt:after {position: absolute; left:0; top:0; z-index:-1; width: 100%; height: 100%; background: rgba(255,255,255,1); content:"";}
-.fix_motion .sticky_cont .cont_box .ending_txt.active {opacity: 1;}
-.fix_motion .sticky_cont .cont_box .ending_txt .tb_row {display: table; width: 100%; height: 100%;}
-.fix_motion .sticky_cont .cont_box .ending_txt .tb_row .tb_cell {display: table-cell; vertical-align: middle; text-align: center;}
-.fix_motion .sticky_cont .cont_box .ending_txt .tb_row .tb_cell p {font-size: 80px; color:#000; line-height: 1;}
 
+/*
 @media only screen and (max-width: 1024px) {
 .ggang_box h2 {font-size:32px;}
 
@@ -1129,7 +1123,7 @@ p {
 .fix_motion .sticky_cont .cont_box .bg_img {background-image: url('../images/cafe1.jpg'); }
 .fix_motion .sticky_cont .cont_box .intro_txt h2 {font-size: 50px;}
 .fix_motion .sticky_cont .cont_box .ending_txt .tb_row .tb_cell p {font-size:50px;}
-}
+}*/
 
 h6 {
   margin-top: 50px;
