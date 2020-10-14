@@ -1115,15 +1115,14 @@ p {
 .no-csspositionsticky .fix_motion .sticky_cont .cont_box .right_mask {width: 0px;}
 .fix_motion .sticky_cont .cont_box .bg_img {position:absolute; left:0; top:0; width: 100%; height: 100%; background-image: url('../images/cafe1.jpg'); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;}
 
-/*
+
+
 @media only screen and (max-width: 1024px) {
 .ggang_box h2 {font-size:32px;}
 
 .fix_motion {height: 3000px;}
-.fix_motion .sticky_cont .cont_box .bg_img {background-image: url('../images/cafe1.jpg'); }
-.fix_motion .sticky_cont .cont_box .intro_txt h2 {font-size: 50px;}
-.fix_motion .sticky_cont .cont_box .ending_txt .tb_row .tb_cell p {font-size:50px;}
-}*/
+.fix_motion .sticky_cont .cont_box .bg_img {background-image: url('../images/cafe_m.jpg'); }
+}
 
 h6 {
   margin-top: 50px;
