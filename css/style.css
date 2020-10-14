@@ -529,229 +529,6 @@ p {
   border: 2px solid #fb6e14;
 }
 
-#fh5co-featured {
-  padding: 7em 0;
-  background: #130d08 url(../images/wood_1.png) repeat;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured {
-    padding: 5em 0;
-  }
-}
-#fh5co-featured .fh5co-heading .heading {
-  position: relative;
-  padding-top: 30px !important;
-  color: #fff;
-}
-#fh5co-featured .fh5co-heading .heading:before, #fh5co-featured .fh5co-heading .heading::before {
-  height: 64px;
-  width: 64px;
-  position: absolute;
-  content: "";
-  background: url(../images/0103-served-plate_64.png) no-repeat;
-  top: 0;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -32px;
-}
-#fh5co-featured .fh5co-heading .sub-heading {
-  color: #a99c92;
-}
-#fh5co-featured .fh5co-grid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-}
-#fh5co-featured .fh5co-grid h2 {
-  font-size: 20px;
-  margin-bottom: 0;
-}
-#fh5co-featured .fh5co-grid p {
-  line-height: 1.6;
-  font-size: 16px;
-  color: #222;
-}
-#fh5co-featured .fh5co-grid .pricing {
-  font-size: 40px;
-  display: block;
-  padding-top: 20px;
-}
-#fh5co-featured .fh5co-grid .pricing:after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  left: 50%;
-  margin-left: -20px;
-  background: #fb6e14;
-}
-#fh5co-featured .fh5co-grid .arrow-left:before, #fh5co-featured .fh5co-grid .arrow-left::before {
-  content: "";
-  position: absolute;
-  z-index: 999;
-  top: 50px;
-  left: 0;
-  margin-left: -15px;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid #f5f5f5;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid .arrow-left:before, #fh5co-featured .fh5co-grid .arrow-left::before {
-    right: auto !important;
-    left: 15px !important;
-    top: 0 !important;
-    margin-top: -15px !important;
-    margin-left: 0px !important;
-    border-top: none !important;
-    border-left: 15px solid transparent !important;
-    border-right: 15px solid transparent !important;
-    border-bottom: 15px solid #f5f5f5 !important;
-  }
-}
-#fh5co-featured .fh5co-grid .arrow-right:before, #fh5co-featured .fh5co-grid .arrow-right::before {
-  content: "";
-  position: absolute;
-  z-index: 999;
-  top: 50px;
-  right: 0;
-  margin-right: -15px;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid #f5f5f5;
-}
-@media screen and (max-width: 992px) {
-  #fh5co-featured .fh5co-grid .arrow-right:before, #fh5co-featured .fh5co-grid .arrow-right::before {
-    right: auto !important;
-    left: 0 !important;
-    margin-left: -15px !important;
-    border-left: none !important;
-    border-right: 15px solid #f5f5f5 !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid .arrow-right:before, #fh5co-featured .fh5co-grid .arrow-right::before {
-    right: auto !important;
-    left: 15px !important;
-    top: 0 !important;
-    margin-top: -15px !important;
-    margin-left: 0px !important;
-    border-top: none !important;
-    border-left: 15px solid transparent !important;
-    border-right: 15px solid transparent !important;
-    border-bottom: 15px solid #f5f5f5 !important;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half {
-  width: 50%;
-  text-align: center;
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-}
-@media screen and (max-width: 992px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half {
-    width: 100%;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-text {
-  background: #f5f5f5;
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-special-1 {
-  background: #faebcd;
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-special-1.arrow-left:before, #fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-special-1.arrow-left::before {
-  border-right: 15px solid #faebcd;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-special-1.arrow-left:before, #fh5co-featured .fh5co-grid > .fh5co-v-half .fh5co-special-1.arrow-left::before {
-    border-left: 15px solid transparent !important;
-    border-right: 15px solid transparent !important;
-    border-bottom: 15px solid #faebcd !important;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-v-col-2 {
-  width: 50%;
-  padding: 20px;
-  position: relative;
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-v-col-2.fh5co-bg-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-v-col-2.fh5co-bg-img {
-    height: 200px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-v-col-2 {
-    width: 100%;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 {
-  width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 > .fh5co-v-col-2 {
-  width: 50%;
-  position: relative;
-  padding: 20px;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 > .fh5co-v-col-2 {
-    width: 100%;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 > .fh5co-v-col-2.fh5co-bg-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2 > .fh5co-v-col-2.fh5co-bg-img {
-    height: 200px;
-  }
-}
-#fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2.fh5co-reversed .fh5co-bg-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-}
-@media screen and (max-width: 992px) {
-  #fh5co-featured .fh5co-grid > .fh5co-v-half > .fh5co-h-row-2.fh5co-reversed .fh5co-bg-img {
-    position: relative;
-    right: inherit;
-    top: inherit;
-    bottom: inherit;
-  }
-}
-
 #fh5co-menus {
   padding: 7em 0;
 }
@@ -765,15 +542,16 @@ p {
   padding-top: 30px !important;
 }
 #fh5co-menus .fh5co-heading .heading:before, #fh5co-menus .fh5co-heading .heading::before {
-  height: 64px;
-  width: 64px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   content: "";
-  background: url(../images/0401-vegan.png) no-repeat;
-  top: 0;
-  left: 50%;
+  background: url(../images/icons8-tableware-100.png) no-repeat;
+  top: -20px;
+  align-self: auto;
+  margin-left: -10px;
   margin-top: -50px;
-  margin-left: -32px;
+  
 }
 #fh5co-menus .fh5co-heading .sub-heading {
    color: #a99c99;
@@ -813,11 +591,23 @@ p {
   padding-left: 80px;
 }
 #fh5co-menus .fh5co-food-menu h2.fh5co-coffee:before {
-  background: url(../images/0203-coffee-love.png) no-repeat;
+  background: url(../images/icons8-coffee-beans-50.png) no-repeat;
   content: "";
   position: absolute;
-  top: -20px;
-  left: 0;
+  top: -10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+}
+#fh5co-menus .fh5co-food-menu h2.fh5co-tea {
+  padding-left: 80px;
+}
+#fh5co-menus .fh5co-food-menu h2.fh5co-tea:before {
+  background: url(../images/icons8-tea-50.png) no-repeat;
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 5px;
   width: 64px;
   height: 64px;
 }
@@ -825,7 +615,7 @@ p {
   padding-left: 80px;
 }
 #fh5co-menus .fh5co-food-menu h2.fh5co-sweet:before {
-  background: url(../images/0401-vegan.png) no-repeat;
+  background: url(../images/icons8-lemon-cake-64.png) no-repeat;
   content: "";
   position: absolute;
   top: -20px;
@@ -837,13 +627,13 @@ p {
   padding-left: 80px;
 }
 #fh5co-menus .fh5co-food-menu h2.fh5co-dishes:before {
-  background: url(../images/0302-steak.png) no-repeat;
+  background: url(../images/icons8-sandwich-with-fried-egg-50.png) no-repeat;
   content: "";
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 64px;
-  height: 45px;
+  height: 64px;
 }
 #fh5co-menus .fh5co-food-menu ul {
   padding: 0;
@@ -926,15 +716,14 @@ p {
   color: #fff;
 }
 #fh5co-events .fh5co-heading .heading:before, #fh5co-events .fh5co-heading .heading::before {
-  height: 64px;
-  width: 49px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   content: "";
-  background: url(../images/0402-chef.png) no-repeat;
-  top: 0;
-  left: 50%;
+  background: url(../images/album-icon-29.png) no-repeat;
+  top: -20px;
+  align-content: center;
   margin-top: -50px;
-  margin-left: -24px;
 }
 #fh5co-events .fh5co-heading .sub-heading {
   color: #a99c99;
