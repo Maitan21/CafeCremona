@@ -191,7 +191,7 @@ p {
  */
 
 .flexslider {
-  top : 7%;
+  top : 10%;
   border: none;
   position: relative;
   z-index: 1;
@@ -207,7 +207,7 @@ p {
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
-  font-size: 10rem;
+  font-size: 10vmax;
   font-weight: 700;
   font-style: italic;
   color: #fff;
@@ -221,7 +221,7 @@ p {
   padding: 0;
   font-family: "Merriweather", serif;
   font-weight: 200;
-  font-size: 8rem;
+  font-size: 8vmax;
   letter-spacing: 2px;
   color: #fff;
   -webkit-transition: 0.3s;
@@ -776,7 +776,7 @@ p {
   margin-left: -32px;
 }
 #fh5co-menus .fh5co-heading .sub-heading {
-  color: #a99c99;
+   color: #a99c99;
   font-weight: bold;
 }
 #fh5co-menus .fh5co-food-menu {
