@@ -11,9 +11,10 @@ This project is a homepage for Cafe Cremona.
 <p float="left">
   <img src="https://user-images.githubusercontent.com/45276804/96375654-3e7c0500-11b5-11eb-9bc8-2dfd6180276d.png" width="80%" /> 
 </p>
+
+
 ## Contribution
 
-FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
+- FREE HTML5 TEMPLATE DESIGNED & DEVELOPED by FREEHTML5.CO
   
-Redesigned by `Maitan21`
+- Redesigned by `Maitan21`
