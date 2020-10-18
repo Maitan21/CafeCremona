@@ -9,7 +9,7 @@ This project is a homepage for Cafe Cremona.
 </p>
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/45276804/96375654-3e7c0500-11b5-11eb-9bc8-2dfd6180276d.png" width="40%" /> 
+  <img src="https://user-images.githubusercontent.com/45276804/96375654-3e7c0500-11b5-11eb-9bc8-2dfd6180276d.png" width="80%" /> 
 </p>
 ## Contribution
 
