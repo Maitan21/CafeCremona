@@ -16,5 +16,5 @@ This project is a homepage for Cafe Cremona.
 ## Contribution
 
 - FREE HTML5 TEMPLATE DESIGNED & DEVELOPED by FREEHTML5.CO
-  
+- Photo copyrighted by CafeCremona
 - Redesigned by `Maitan21`
