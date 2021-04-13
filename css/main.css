@@ -227,6 +227,7 @@ header .sub-menu ul.menu li a:hover {
 header .sub-menu .search {
   position: relative;
   height: 34px;
+  margin-top: 12px;
 }
 header .sub-menu .search input {
   width: 36px;
@@ -383,6 +384,7 @@ header .badges .badge {
   display: flex;
 }
 .notice .notice-line .inner__left {
+  margin-left:20px;
   width: 100%;
   height: 100%;
   background-color: #333;
@@ -881,7 +883,7 @@ header .badges .badge {
 }
 .awards .inner {
   padding-bottom: 80px;
-  height: 300px;
+  height: 330px;
 }
 
 .awards h2 {
@@ -898,6 +900,7 @@ header .badges .badge {
 .awards .swiper-container {
   width: 100%;
   height: auto;
+
 }
 .awards .swiper-prev,
 .awards .swiper-next {
