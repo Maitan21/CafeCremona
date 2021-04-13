@@ -443,6 +443,17 @@ header .badges .badge {
   font-size: 30px;
 }
 /*PROMOTION*/
+.promotion img {
+  margin :auto;
+}
+@media screen and (max-width: 768px){
+  .promotion img {
+    width:70%;
+  }
+  .notice .promotion .swiper-slide .btn {
+    position: relative !important;
+  }
+}
 .notice .promotion {
   /*width: auto;*/
   height: 693px;
@@ -747,8 +758,12 @@ header .badges .badge {
   background-attachment: fixed;
   background-size: cover;
 }
-
-
+@media screen and (max-width:320px) {
+  .reserve-store img {
+    width:95.5%;
+  }
+  
+}
 .reserve-store .inner {
   height: 600px;
   display: flex;
