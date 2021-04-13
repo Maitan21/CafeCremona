@@ -15,8 +15,6 @@ img {
 }
 main,header,section,nav,footer,aside,article,figure{display:block;}
 /*네비게이션*/
-
-body { background: linear-gradient(to right, #002762, #005693);}
 header .left { float: left; padding: 43px 0 0 78px;}
 header nav a { display: block; position: relative; height: 50px; line-height: 50px; font-size: 17px; font-weight: bold;}
 header nav a:before { content: ""; position: absolute; left: 0; bottom: 13px; width: 0; height: 1px; background: #fff; transition: width 0.5s;}
@@ -139,7 +137,7 @@ header > ul li.join a { background: rgba(255,255,255,0.2);}
 
 /*BACK TO POSITION*/
 .back-to-position {
-  opacity: 1;
+  opacity: 0;
   transition: 1s;
 }
 .back-to-position.to-right {
@@ -448,7 +446,7 @@ header .badges .badge {
 }
 @media screen and (max-width: 768px){
   .promotion img {
-    width:70%;
+    width:65%;
   }
   .notice .promotion .swiper-slide .btn {
     position: relative !important;
@@ -634,15 +632,35 @@ header .badges .badge {
 }
 .youtube .floating1 {
   position: absolute;
+  width: 15vw;
+  max-width:17vw;
   top: 50px;
   left: 0;
 }
 .youtube .floating2 {
   position: absolute;
-  top: 350px;
-  left: 150px;
+  width: 12vw;
+  max-width: 14vw;
+  top: 20vw;
+  left: 8vw;
 }
-
+@media screen and (max-width: 767px) {
+  .youtube .floating1 {
+    position: absolute;
+    width: 24vw;
+    max-width:24vw;
+    top: 30px;
+    left: 0;
+  }
+  .youtube .floating2 {
+    position: absolute;
+    width: 18vw;
+    max-width: 18vw;
+    top: 30vw;
+    left: 10vw;
+  }
+  
+}
 
 /*SEASON PRODUCT*/
 .season-product {
@@ -710,7 +728,7 @@ header .badges .badge {
 .pick-your-favorite h2 {
   color:white;
   margin: auto;
-  font-size: 3.8vw;
+  font-size: 2em;
   font-weight: 200;
 }
 
@@ -727,10 +745,10 @@ header .badges .badge {
     font-weight: 200;
   }
 }
-
+ 
 .pick-your-favorite .btn {
   margin-top:25px;
-  margin-left: -151px;
+  /* margin-left: -151px; */
 }
 .pick-your-favorite .inner {
   padding: 110px 0;
@@ -777,6 +795,7 @@ header .badges .badge {
 }
 .reserve-store .medal .front,
 .reserve-store .medal .back {
+  
   width: inherit;
   height: inherit;
   position: absolute;
@@ -839,11 +858,11 @@ header .badges .badge {
 .find-store .picture1 {
   width: 18vw;
   top: -3vw;
-  left: 6vw;
+  left: -3vw;
 }
 .find-store .picture2 {
   top: 7vw;
-  left: 18vw;
+  left: 11vw;
   width: 11vw;
 }
 .find-store .text-group {
@@ -851,11 +870,11 @@ header .badges .badge {
   top: 120px;
   left: 550px;
 }
-@media screen and (min-width: 608px)and (max-width: 1256px) {
+@media screen and (max-width: 1256px) {
   .find-store .text-group {
     position: absolute;
     top: 120px;
-    left: -2vw;
+    left: 25vw;
   }
   .find-store h1 {
     font-size: 4vw;
@@ -871,15 +890,16 @@ header .badges .badge {
   .find-store .text-group {
     position: absolute;
     top: 120px;
-    left: -30vw;
+    left: 7vw;
+    margin-right: 9px;
   }
   .find-store h1 {
-    font-size: 4vw;
+    font-size: 2em;
     font-weight: bold;
   }
   
   .find-store h2 {
-    font-size: 3.8vw;
+    font-size: 1.3em;
     margin-bottom: 20px;
   }
 }
@@ -898,7 +918,7 @@ header .badges .badge {
 }
 .awards .inner {
   padding-bottom: 80px;
-  height: 330px;
+  height: 230px;
 }
 
 .awards h2 {
