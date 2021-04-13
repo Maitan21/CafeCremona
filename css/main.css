@@ -661,7 +661,7 @@ header .badges .badge {
 
 /*RESERVE COFFEE*/
 .reserve-coffee {
-  background-image: url("../images/reserve_bg.jpg");
+  background-image: url("../images/banner.jpg");
 }
 .reserve-coffee .inner {
   height: 400px;
@@ -741,7 +741,7 @@ header .badges .badge {
 
 /*RESERVE STORE*/
 .reserve-store {
-  background-image: url("../images/reserve_store_bg.jpg");
+  background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -954,7 +954,8 @@ header .badges .badge {
 }
 
 .ui-w-50 {
-  width: 50px !important;
+  width: 60px !important;
+  height: 60px;
   margin-top:10px;
 }
 .d-blcok {
