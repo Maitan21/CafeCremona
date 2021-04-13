@@ -1,599 +1,685 @@
-
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cafe Cremona</title>
+  <title>Starbucks Coffee Korea</title>
 
-  <!-- 
-	//////////////////////////////////////////////////////
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Starbucks" />
+  <meta property="og:title" content="Starbucks Coffee Korea" />
+  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+  <meta property="og:image" content="favicon.png" />
+  <meta property="og:url" content="http://jp.cafecremona.shop" />
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Starbucks" />
+  <meta property="twitter:title" content="Starbucks Coffee Korea" />
+  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+  <meta property="twitter:image" content="favicno.png" />
+  <meta property="twitter:url" content="http://jp.cafecremona.shop" />
 
-	Redeisgined by Maintan21
+    
+  <!--파비콘-->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- <link rel="icon" href="./favicon.png" /> -->
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
 
-	//////////////////////////////////////////////////////
-	 -->
-	<!--Meta tag Setting-->
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta property="og:title" content="Cafe Cremona"/>
-	<meta property="og:description" content ="☕️🍹🍰🥪
-	2020/9/1 OPEN 💛🧡
-	ロングライフタウン寝屋川公園前エントランス内
-	営業時間 9:30〜16:00(L.O. 15:30)
-	定休日 毎週金曜
-	駐車場あり🚗
-	📱09012299007
-	✉️ cafecremona@au.com"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="images/cremona.png">
-	<meta property="og:image" content="images/cremona.png"/>
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="./vendors/swiper/swiper-bundle.min.css" />
+  <script src="./vendors/swiper/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <!--Custom-->
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/menu_slide.js"></script>
 
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+  
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="inner">
+      <a href="/" class="logo">
+        <img id="logo"src="./images/cremona_logo_only_text.png" alt="CREMONA" style="width:400px; margin-top:2px;"/>
+      </a>
+      <a href="#a" class="all">all Menu</a>
+    <div class="nav">
+      <h2>Menu</h2>
+      <nav>
+        <div class="sub-menu">
+            <ul class="menu">
+              <li>
+                  <a href="javascript:void(0)">CREMONA</a>
+              </li>
+              <li>
+                  <a href="javascript:void(0)">MENU</a>
+              </li>
 
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
-	<!-- font Japanese-->
-	<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<!-- Datetimepicker -->
-	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Main CSS -->
-	<link rel="stylesheet" href="css/style.css">
+              <li>
+                <a href="javascript:void(0)">STORE</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">RESERVE</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">WHAT'S NEW</a>
+          </li>
+            </ul>
 
-	<script type="text/javascript" src="js/jquery.1.12.4.js"></script>
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="js/open.js"></script>
-	</head>
-	<!-- Open the door! -->
-	<body>
-		
-		<div class="sticky_cont">
-			<figure class="bg_img "></figure>
-		</div>
-		
-		
-	<div id="fh5co-container">
-		
-		<!-- main contents -->
-		<div class="js-sticky">
-			<div class="fh5co-main-nav">
-				<div class="container-fluid">
-					<div class="fh5co-logo">
-						<a href="index.html">Cremona</a>
-					</div>
-					<div class="fh5co-menu-1" style="float: right;">
-						<a href="#" data-nav-section="home">Home</a>
-						<a href="#" data-nav-section="about">About</a>
-					</div>
-				
-					<div class="fh5co-menu-2">
-						<a href="#" data-nav-section="events">Photo</a>
-						<a href="#" data-nav-section="menu">Menu</a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
+        <div class="search">
+          <input type="text" />
+            <span class="material-icons">search</span>
+            </div>
+        </div>
+       </nav>
+        <a href="#a" class="close">Close</a>
+    </div>
+  </div>
 
-		<div id="fh5co-about" data-section="about">
-			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/front.png)"></div>
-			<div class="fh5co-2col fh5co-text">
-				<h2 class="heading to-animate">About Us</h2>
-				<p class="to-animate"><span class="firstcharacter">C</span>afe Cremona は素敵なカフェです！こちらにカフェの簡略な紹介おねがいします！こちらにカフェの簡略な紹介おねがいします！こちらにカフェの簡略な紹介おねがいします！こちらにカフェの簡略な紹介おねがいします！</p>
-				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Menuをみる!</a></p>
-			</div>
-		</div>
+    <!--BADGES-->
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1.png" alt="Badge" />
+      </div> 
+      <!-- <div class="badge">
+        <img src="./images/badge2.jpg" alt="Badge" />
+      </div> -->
+    </div>
+  </header>
+<div class="dim"></div>
 
-		<div id="fh5co-events" data-section="events" style="background-image: url(images/food6.jpg);" data-stellar-background-ratio="0.5">
-			<div class="fh5co-overlay"></div>
-			<div class="container">
-				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2 to-animate">
-						<h2 class="heading">Photos</h2>
-						<p class="sub-heading">こちらCremonaの写真！</p>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<ul class="fh5co-social">
-								<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-								<li class="to-animate-2"><a href="https://instagram.com/cafe.cremona?igshid=apuo8cyzg1b1"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food1.jpg" width="100%" width ="100%"/>	
-					</div>
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food2.jpg" width="100%" width ="100%"/>
-					</div>
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food7.jpg" width="100%" width ="100%"/>
-					</div>
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food3.jpg" width="100%" width ="100%"/>
-					</div>
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food4.jpg" width="100%" width ="100%"/>
-					</div>
-					<div class="col-md-4">
-						<img  class="fh5co-event to-animate-2" src="images/food5.jpg" width="100%" width ="100%"/>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div id="fh5co-menus" data-section="menu">
-			<div class="container">
-				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Menu</h2>
-						<p class="sub-heading to-animate">こちらCremonaの代表メニューでございます！</p>
-					</div>
-				</div>
-				<div class="row row-padded">
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-coffee">Coffee</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>コーヒー</h3>
-											<p>HOT / ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										 ¥380
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>アメリカン</h3>
-											<p>HOT</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥380
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>カフェラテ</h3>
-											<p>HOT / ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥430
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>カプチーノ</h3>
-											<p>HOT</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥430
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>カフェモカ</h3>
-											<p>HOT / ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥480
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>キャラメルラテ</h3>
-											<p>HOT / ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥480
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>シェケラート</h3>
-											<p>ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥250
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-tea">TEA</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>アールグレイ</h3>
-											<p>HOT</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥370
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>ダージリン</h3>
-											<p>HOT</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥370
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>パウリスタ アイスティー</h3>
-											<p>ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥370
-									</div>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-drinks">Juice</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>オレンジ100%ジュース</h3>
-											<p>ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥350
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>自家製レモネード</h3>
-											<p>HOT / ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥490
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>自家製レモンスカッシュ</h3>
-											<p>ICE</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥490
-									</div>
-								</li>
-							
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-dishes">Food</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_3.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>フレンチトースト</h3>
-											<p></p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥650
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_4.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>モーニングプレート</h3>
-											<p>9:30 ~ 12:00 </p>
-											<p>(コーヒーor紅茶付き)</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥690
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_2.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>ランチプレート</h3>
-											<p>12:00 ~ 15:00 </p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥690
-									</div>
-								</li>
-								
-							</ul>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<div class="fh5co-food-menu to-animate-2">
-							<h2 class="fh5co-sweet">Sweets</h2>
-							<ul>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>バニラアイス</h3>
-											<p></p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥350
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_6.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>アフォガード</h3>
-											
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥350
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_7.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>ケーキ各種</h3>
-											<p></p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥390
-									</div>
-								</li>
-								<li>
-									<div class="fh5co-food-desc">
-										<figure>
-											<img src="images/res_img_5.jpg" class="img-responsive" alt="Free HTML5 Templates by FREEHTML5.co">
-										</figure>
-										<div>
-											<h3>ケーキセット</h3>
-											<p>お好きなケーキ１つ＋コーヒーまたは紅茶</p>
-										</div>
-									</div>
-									<div class="fh5co-food-pricing">
-										¥650
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 text-center to-animate-2">
-						<p><a href="#" class="btn btn-primary btn-outline">More Food Menu</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+  <div id="sidebar"></div>
 
-		
+  
 
-		<div id="fh5co-contact" data-section="reservation">
-			<div class="container">
-				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">問い合わせ</h2>
-						<p class="sub-heading to-animate"></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 to-animate-2">
-						<h3>Contact Info</h3>
-						<ul class="fh5co-contact-info">
-							<li class="fh5co-contact-address ">
-								<i class="icon-home"></i>
-								ロングライフタウン寝屋川公園前エントランス内
-								<br>
-								Open : 9 : 30
-								<br>
-								Closed : 16 : 00 (L.O. 15:30)
-							</li>
-							<li><i class="icon-phone"></i> 090 - 1229 - 9007</li>
-							<li><i class="icon-envelope"></i>cafecremona@au.com</li>
-							<li><i class="icon-globe"></i> <a href="#" target="_blank">WebSite</a></li>
-						</ul>
-					</div>
-					<div class="col-md-6 to-animate-2">
-						<h3>メール送る！</h3>
-						<div class="form-group ">
-							<label for="name" class="sr-only">Name</label>
-							<input id="name" class="form-control" placeholder="Name" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
-						</div>
-						<div class="form-group">
-							<label for="occation" class="sr-only">Occation</label>
-							<select class="form-control" id="occation">
-								<option>Select an Occation</option>
-							  <option>Birthday</option>
-							  <option>Others</option>
-							</select>
-						</div>
-						<div class="form-group ">
-							<label for="date" class="sr-only">Date</label>
-							<input id="date" class="form-control" placeholder="Date &amp; Time" type="text">
-						</div>						
-						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group ">
-							<input class="btn btn-primary" value="送る"  style="font-family: Mplus 1p; font-size: 20px;" type="submit">
-						</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row row-padded">
-				<div class="col-md-12 text-center">
-					<p class="to-animate">&copy; All rights reserved and Designed by <a href="https://github.com/Maitan21" target="_blank">Maitan21 </a>
-					</p>
-					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="fh5co-social">
-						<li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
-						<li class="to-animate-2"><a href="https://instagram.com/cafe.cremona?igshid=apuo8cyzg1b1"><i class="icon-instagram"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!--VISUAL-->
+  <section class="visual">
+    <div class="inner">
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Bootstrap DateTimePicker -->
-	<script src="js/moment.js"></script>
-	<script src="js/bootstrap-datetimepicker.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script>
-		$(function () {
-	       $('#date').datetimepicker();
-	   });
-	</script>
-	<!-- Main JS -->
-	<script src="js/main.js"></script>
+      <div class="title fade-in">
+        <img class="logo" src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" />
+        <a href="javascript:void(0)" class="btn btn--brown">もっと見る</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visible.png" alt="new OATMEAL LATTE" class="cup1 image" />
+        <!-- <img src="./images/visual_cup1_text.png" alt="知らない" class="cup1 text" /> -->
+      </div>
+      <!-- <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" />
+        <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
+      </div> -->
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+    </div>
+  </section>
 
-	</body>
+
+  <!--NOTICE-->
+  <section class="notice">
+
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>お知らせ</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">HP　リニューアル中です。</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">HP　リニューアル中です。</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">HP　リニューアル中です。</a>
+              </div>
+              <div class="swiper-slide">
+                 <a href="javascript:void(0)">HP　リニューアル中です。</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <span class="material-icons">add_circle</span>
+          </a>
+        </div>
+
+        <!-- <div class="inner__right">
+          <h2>クレモナ　プロモショーン</h2>
+          <div class="toggle-promotion open">
+            <div class="material-icons">upload</div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+      <!--SEASON PRODUCT-->
+  <!-- <section class="season-product scroll-spy">
+    <div class="inner">
+      <img src="./images/floating3.png" alt="Icon" class="floating floating3" style="overflow: visible;"/>
+      <img src="./images/season_product_image.png" alt="아이스 커피 블렌드" class="product back-to-position to-right delay-0" />
+
+      <div class="text-group">
+        <img src="./images/season_product_text1.png" alt="상쾌하게 여름을 반겨줄 시즌 원두 아이스 커피 블렌드" class="title back-to-position to-left delay-1" />
+        <img src="./images/season_product_text2.png" alt="아프리카와 라틴 아메리카 커피의 브렌드로 시트러스함과 은은한 캐러멜 향을 동시에 느낄 수 있으며, 차갑게 즐길 때 풍미가 더욱 깊어지는 원두입니다." class="description back-to-position to-left delay-2" />
+        <div class="more back-to-position to-left delay-3">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!--PROMOTION-->
+    <div class="promotion">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!--RESERVE STORE-->
+  <section class="reserve-store">
+    <div class="inner">
+
+      <div class="medal">
+        <div class="front">
+          <img src="./images/reserve_store_medal_front.png" alt="R">
+        </div>
+        <div class="back">
+          <img src="./images/reserve_store_medal_back.png" alt="스타벅스 리저브 매장">
+          <a href="javascript:void(0)" class="btn">
+            매장안내
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--REWARDS-->
+  <!-- <section class="rewards">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="inner">
+
+      <div class="btn-group">
+        <div class="btn btn--reverse sign-up">회원가입</div>
+        <div class="btn sign-in">로그인</div>
+        <div class="btn gift">e-Gift 선물하기</div>
+      </div>
+
+    </div>
+  </section>   -->
+ 
+
+
+  <!--YOUTUBE VIDEO-->
+  <!-- <section class="youtube">
+    <div class="youtube__area">
+      <div id="player">
+      </div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+      <img src="./images/floating1.png" alt="Icon" class="floating floating1" />
+      <img src="./images/floating2.png" alt="Icon" class="floating floating2" />
+    </div>
+  </section> -->
+
+
+
+
+
+  <!--RESERVE COFFEE-->
+  <!-- <section class="reserve-coffee scroll-spy">
+    <div class="inner">
+
+      <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
+      <div class="text-group">
+        <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1" />
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+        </div>
+      </div>
+      <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-3" />
+
+    </div>
+  </section> -->
+
+  <!--AWARDS-->
+  <section class="awards">
+    <div class="inner">
+    <h1 style="font-size:5em; color:white; text-align: center; ">DRINKS</h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>コーヒー</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥380</h1>
+                    </div>
+            </div>   
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>アメリカン</h6>
+                        <span style="color:gray">HOT</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥430</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>カフェラテ</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>300YEN</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>カプチーノ</h6>
+                        <span style="color:gray">HOT</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥430</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>カフェモカ</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥480</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>キャラメルラテ</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥480</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>シェケラート</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥250</h1>
+                    </div>
+            </div>  
+          </div>
+
+          <!-- TEA -->
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>アールグレイ</h6>
+                        <span style="color:gray">HOT</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥370</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>ダージリン</h6>
+                        <span style="color:gray">HOT</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥370</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>パウリスタ アイスティー</h6>
+                        <span style="color:gray">ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥370</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>オレンジ100%ジュース</h6>
+                        <span style="color:gray">ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥350</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>自家製レモネード</h6>
+                        <span style="color:gray">HOT / ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥490</h1>
+                    </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="media mb-0">
+                <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                    <div class="media-body align-self-center ml-3">
+                        <h6>自家製レモンスカッシュ</h6>
+                        <span style="color:gray">ICE</span>
+                    </div>
+                    <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                        <h1>¥490</h1>
+                    </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+
+      <h1 style="font-size:5em; color:white;text-align: center;">FOODS</h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>フレンチトースト</h6>
+                            <span style="color:gray"></span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥650</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>モーニングプレート</h6>
+                            <span style="color:gray">9:30 ~ 12:00<br>(コーヒーor紅茶付き)</span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥690</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>ランチプレート</h6>
+                            <span style="color:gray">12:00 ~ 15:00</span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥690</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>バニラアイス</h6>
+                            <span style="color:gray"></span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥350</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>自家製レモネード</h6>
+                            <span style="color:gray">HOT / ICE</span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥490</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>アフォガード</h6>
+                            <span style="color:gray"></span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥350</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>自ケーキ各種</h6>
+                            <span style="color:gray"></span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥390</h1>
+                        </div>
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="media mb-0">
+                    <img class="d-block ui-w-50 rounded-circle" style="float:left ;margin-right:10px;" src="https://images.therich.io/images/logo/us/DXC.png" alt="">
+                        <div class="media-body align-self-center ml-3">
+                            <h6>ケーキセット</h6>
+                            <span style="color:gray">お好きなケーキ１つ＋コーヒーまたは紅茶</span>
+                        </div>
+                        <div class="d-block ui-w-50" style="line-height: 7vh; color:darkred">
+                            <h1>¥650</h1>
+                        </div>
+                </div>  
+              </div>
+        </div>
+      </div>
+
+      <div class="swiper-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-next">
+        <span class="material-icons">arrow_forward</span>
+      </div>
+      
+
+    </div>
+  </section>
+
+
+  <!--PICK YOUR FAVORITE-->
+  <section class="pick-your-favorite scroll-spy">
+    <div class="inner">
+      <div class="text-group">
+        <!-- <img src="./images/favorite_text1.png" alt="PICK YOUR FAVORITE" class="title back-to-position to-right delay-0" /> -->
+        <h1>PICK YOUR FAVORITE</h1>
+        <h2>様々なメニューをCremonaでお楽しみください!</h2>
+        <!-- <img src="./images/favorite_text2.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요." class="description back-to-position to-right delay-1" /> -->
+        <div class="more back-to-position to-left delay-2">
+          <a href="javascript:void(0)" class="btn btn--white">もっと見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FIND THE STORE-->
+  <section class="find-store scroll-spy">
+    <div class="inner">
+
+      <img src="./images/find_store_texture1.png" alt="" class="texture1" />
+      <img src="./images/find_store_texture2.png" alt="" class="texture2" />
+      <img src="./images/find_store_picture1.png" alt="" class="picture picture1 back-to-position to-right delay-0" />
+      <img src="./images/find_store_picture2.png" alt="" class="picture picture2 back-to-position to-right delay-1" />
+      <div></div>
+      <div class="text-group">
+        <div class="back-to-position to-left delay-0"><h1><strong>Cremona</strong>を近くて経験してみましょう！</h1></div>
+        <div class="back-to-position to-left delay-0"><h2>お店の住所をもっと詳しくはこちらえ！</h2></div>
+        <div class="more back-to-position to-left delay-2">
+          <a href="javascript:void(0)" class="btn">店舗探し</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="inner">
+
+      <!-- <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">스타벅스 카드 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul> -->
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">個人情報処理方針</a></li>
+        <li><a href="javascript:void(0)">映像情報処理機器の運営管理方針</a></li>
+        <li><a href="javascript:void(0)">ホームページ利用約款</a></li>
+        <li><a href="javascript:void(0)">位置情報利用約款</a></li>
+      </ul>
+
+      <!-- <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">신규입점제의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div> -->
+
+        <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">アクセス</a>
+        <a href="javascript:void(0)" class="btn btn--white">新規入店問合せ</a>
+        <a href="javascript:void(0)" class="btn btn--white">サイトマップ</a>
+      </div>
+
+      <div class="info">
+        <span>ホームページ管理 : Chouettics Technology consulting</span>
+        <span>Cafe Cremona : 亀岡</span>
+        <span>TEL : 090 - 1229 - 9007 / E-Mail : cafecremona@au.com</span>
+        <span>個人情報責任者 : Mr.Jho</span>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> Chouettics. All Rights Reserved.
+      </p>
+      <img src="./images/cremona_logo_only_text.png" alt="STAR BUCKS" class="logo" style="width: 150px" />
+    </div>
+  </footer>
+
+
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+</body>
 </html>
-
