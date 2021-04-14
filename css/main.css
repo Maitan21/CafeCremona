@@ -338,7 +338,7 @@ header .badges .badge {
 .visual .cup2.image {
   position: absolute;
   bottom: 0;
-  right: 162px;
+  right: 700px;
 }
 .visual .cup2.text {
   position: absolute;
@@ -443,15 +443,16 @@ header .badges .badge {
 /*PROMOTION*/
 .promotion img {
   margin :auto;
+  width: 100%;
 }
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .promotion img {
     width:65%;
   }
   .notice .promotion .swiper-slide .btn {
     position: relative !important;
   }
-}
+} */
 .notice .promotion {
   /*width: auto;*/
   height: 693px;
@@ -918,7 +919,10 @@ header .badges .badge {
 }
 .awards .inner {
   padding-bottom: 80px;
-  height: 230px;
+  height: 355px;
+}
+.awards h1 {
+  margin: 30px auto  !important;
 }
 
 .awards h2 {
