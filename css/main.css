@@ -921,9 +921,9 @@ header .badges .badge {
   padding-bottom: 80px;
   height: 355px;
 }
-.awards h1 {
+/* .awards h1 {
   margin: 30px auto  !important;
-}
+} */
 
 .awards h2 {
   font-size : 1em;
@@ -976,13 +976,15 @@ header .badges .badge {
   border-style: none;
 }
 .mb-0 {
-  margin-bottom: 0 !important;
+ margin: 20px auto !important;
 }
 .media {
+  
   display: flex;
   align-items: flex-start;
 }
 .media-body{
+  height: auto;
   margin-right: 20px;
 }
 .align-self-center {
